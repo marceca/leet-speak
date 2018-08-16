@@ -1,9 +1,10 @@
 let url = window.location.href;
-
-let body = $('body').text();
-
+let body = $('body').html();
+console.log(body)
 
 $.get(url, function(response) {
+    let body = $('body').text();
+
     // Select only between body tags
     var pattern = /<body[^>]*>((.|[\n\r])*)<\/body>/im
     var array_matches = pattern.exec(response);
@@ -90,11 +91,7 @@ $.get(url, function(response) {
     }
 
     $('body').html(l33tstr1ng)
-    $('body').append('<button id="putBackBody">Put Back Body</button>')
     $('body').css('background-color', 'black')
     $('body').css('color', 'green')
 })
-console.log(body)
-$('#putBackBody').click(function() {
-    $('body').html(body)
-})
+

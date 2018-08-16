@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "focus",
+    "name": "l33t sp34k",
     "version": "1.0",
-    "description": "remove the main content on youtube",
+    "description": "Change all text to l33t sp34k",
     "content_scripts": [
         {
             "matches": ["http://*/*"],
@@ -21,5 +21,5 @@
         "48": "yinyang-48.png",
         "128": "yinyang-128.png" 
     },
-    "web_accessible_resources": ["https://unsplash.com/photos/*"]
+    "web_accessible_resources": ["matrix.gif"]
 }
